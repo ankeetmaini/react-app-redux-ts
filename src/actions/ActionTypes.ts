@@ -1,0 +1,8 @@
+export const ADD_TODO = "ADD_TODO";
+export const REMOVE_TODOS = "REMOVE_TODOS";
+
+export const GET_DOGGO_REQUEST = "GET_DOGGO_REQUEST";
+export const GET_DOGGO_SUCCESS = "GET_DOGGO_SUCCESS";
+export const GET_DOGGO_ERROR = "GET_DOGGO_ERROR";
+
+export const CLEAR_DOGGO = "CLEAR_DOGGO";
