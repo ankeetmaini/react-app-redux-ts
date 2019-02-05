@@ -25,7 +25,7 @@ export function createAction<T extends string, U, V>(
   };
 }
 
-type API<U, V> = (args?: U) => Promise<V>;
+type API<U, V> = (args: U) => Promise<V>;
 export function createAsyncAction<
   A extends string,
   B extends string,
@@ -35,7 +35,7 @@ export function createAsyncAction<
   V
 >(actions: [A, B, C], api: API<U, V>) {
   return (
-    apiArgs?: U
+    apiArgs: U
   ): ThunkAction<
     Promise<Action<B, U | undefined, V> | void>,
     S,

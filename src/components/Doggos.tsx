@@ -19,7 +19,12 @@ class Doggos extends Component<TStateProps & TDispatchProps> {
     return (
       <div>
         <h1>Love Doggos</h1>
-        <button onClick={this.props.getDoggo}>Get me a cute Doggo</button>
+        <h3>Get me a cute Doggo</h3>
+        {["boxer", "labrador", "retriever"].map(d => (
+          <button type="button" onClick={this.props.getDoggo.bind(this, d)}>
+            {d}
+          </button>
+        ))}
         <div style={{ margin: 10 }}>
           {asyncStatus === "INIT" && "Click the button to see a cute dog"}
           {asyncStatus === "LOADING" && "Loading..."}
